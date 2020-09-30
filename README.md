@@ -1,4 +1,4 @@
-# Ontology-of-Relationships
+# The Generic Relationships Taxonomy/Ontology
 
 This repository provides a set of ontologies of generic, formal, widely applicable and often domain-neutral relationships ('relations' for short) that can be used in various other ontologies. The relational constructs (e.g., OWL Object or Data Properties) are displayed/represented by natural language terms (predicates such as 'is part of').
 
