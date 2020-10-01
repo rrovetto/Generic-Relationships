@@ -20,3 +20,6 @@ Therefore, for widerapplicability, and given my education in ontology, it was im
 (_Generic use-case_) In the course of developing ontologies, one may assert various relationships to link the categories and individuals in the ontology. Those relations are sometimes highly general, abstract, and applicable to various topics. As an ontology develop you may find that they do not apply exclusively to the target domain of your ontology, or that they can be generalized to be domain-neutral. For example, one may assert a 'has computer component' relation which can apply to various computer-related ontologies. But one can generlaize it to 'has component' which would be a more generic relation applicable to almost any ontology (depending on the intended meaning of 'component' or the relation as a whole. 
 
 My university studies included a focus on highly abstract concepts, including those of relation(ship)s and how to characterize and formalize them.
+
+## Rights
+© 2018-2020, Robert John Rovetto.
