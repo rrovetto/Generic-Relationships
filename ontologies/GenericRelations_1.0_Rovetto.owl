@@ -1,0 +1,2426 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://purl.org/rrovetto/ontologies/GenericRelations.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://purl.org/rrovetto/ontologies/GenericRelations.owl">
+    <Prefix name="" IRI="https://purl.org/rrovetto/ontologies/GenericRelations.owl"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl</Import>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal xml:lang="en">Robert J. Rovetto
+Born: New York, USA
+
+Education: B.A. (2007), M.A. (2011)
+ORCID ID: http://orcid.org/0000-0003-3835-7817
+
+https://github.com/rrovetto
+
+Robert serves in ontology / semantic technology groups, as well as other committees in distinct disciplines. He has been active in the ontology community for a number of years. 
+
+A focus during his graduate studies was formal ontology, and the most abstract aspects of ontology, drawing on philosophy.
+
+He is open to and actively seeking formal collaborations, study/educational opportunities (e.g. PhD fellowship), and employment opportunities.
+
+Contact: rrovetto@terpalum.umd.edu, ontologos@yahoo.com</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+        <Literal xml:lang="en">© 2018-2020, Robert John Rovetto. 
+
+THIS WORK IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS WORK, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <IRI>https://github.com/rrovetto/Generic-Relationships-Taxonomy</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <Literal xml:lang="en">The Generic Relationship Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">DEVELOPMENT NOTE: 
+The syntactical form of the predicates representing the relationships is such that when an ontological statement (e.g., in the form of an RDF triple) is instantiated, the statement will be easy to read, i.e., readable in natural langauge. The addition of the copula facilitates this.
+
+OWL Object / Data / Annotation Properties with labels that are ALL CAPITALIZED are temporary groups, i.e., they are included for display and organizational purposes and are not necessarily intended for use in automated inference or for modeling a given target domain.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">Draft</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">This is an ontology of various types of abstract (inter)relationships that can be used across various disciplines and used in various ontologies. The ontology aims to be neutral with minimal to no commitments. As development continues where each relation is formalized, specific ontological commitments may be made. However, the ontology will remain neutral in that it will not import or adopt an external ontology (upper level or otherwise).
+
+Many if not all of the relationships, represented by predicates, expressed in this ontology are domain-independent: they are not unique or specific to a particular universe of discourse, discipline, or domain. 
+
+The relationships aim to be neutral and widely applicable between various sort of entities (things, objects, occurrences, activities, actors, agents, events, properties, characteristics, attributes, values, mathematical constructs, mental constructs, social entiteis, abstract objects, concrete objects, etc.).
+
+It is intended to be applicable to any information system of any subject matter to, in part, semantically annotate data elements, databases, etc.
+
+Example relationsihps include those of parthood (part of), causality (causes), etc.
+
+The ontology OWL file is anticipated to be located at
+https://github.com/rrovetto/Generic-Relationships-Taxonomy</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="en">1.0.0</Literal>
+    </Annotation>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/ACTIVITY-ACTOR_RELATIONS"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/CLASS-CLASS_RELATIONS"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/CLASS-MEMBER_RELATIONS"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/DESIGNATION_RELATIONS"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/FORMAL_ONTOLOGICAL_RELATIONS"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/PROPERTY-BEARER_RELATIONS"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/RELATIONS_BETWEEN_TERMS"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/RELATIONS_FOR_ALPHANUMERIC_VALUES"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/a32888fa_def0_4597_9d21_713ddca8e57c"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/a3eadbad_ab2e_4e23_a0cf_4dc0955d9519"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/a5202b4d_c470_488d_9090_e5c70f9af13f"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/a5d22c99_e33c_4299_a0ed_81f81a17a8f7"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/a661d2e0_6491_4b75_9ccc_bd76397023b6"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/a779b32e_96a4_4ee4_b52d_09547f56bfab"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/a897d408_5ad9_4880_9bf3_fe7b375615d3"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/a926bfa8_1190_4667_bac3_0308afe6bf4e"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/a9342338_5a56_451c_a20e_33385ad1297e"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/ab74eadb_f6f6_40bb_a20a_6e1eabc7cd34"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/ac76d815_d8dc_4325_9d19_9673e38ac5b4"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/ae4df0de_530f_44c4_a1f0_bcf5bd92fefb"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/b2d0ea96_430d_4cc3_b362_b58d8f3255bc"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/b310ad58_9f4f_463e_a363_410083a768d3"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/b389dfd7_672a_4fbc_9f41_21c6b5497a6b"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/b4549d91_2ff4_4abd_97e8_f0f1907ffc07"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/b64b41f5_9dee_4703_9cc9_b5c2e5599c11"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/b86a9e5b_8775_4694_8611_24dd513ba2ef"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/b9802c2e_68e2_430c_aab3_682f1c323003"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/ba8d4095_9adf_42a0_b562_baf130f95141"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/bd67b872_7a04_46a6_ba58_ed7fe70b06e7"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/be618960_1689_4990_b3cd_563ba2693cd2"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/c05092d4_d174_43a2_92e6_b725528bfc64"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/c15baffe_d70d_4fab_92e6_1c46060540a4"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/c1c4b016_fafd_4c25_a75f_ae9ab69b23e5"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/c59a4142_3d01_4a60_8648_9f388a738e92"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/ca03e90f_6b3b_4b70_ba5e_7c38ff7ffd2d"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/cb447a71_e26d_42c9_9388_2f79b786798b"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/cd8c2057_0d14_4ff4_884c_c39cfc070d52"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/cdd489cb_e7a7_462a_8ae4_106e22cdd195"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/ce572af0_3bcb_4955_8c7e_22810a9d1768"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/d0ca7c31_92bd_4e7b_a81c_de75876c0638"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/d1f94593_b437_42e4_9556_fa828dd94c39"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/d3aea42c_a03c_44e9_8529_62cb185a427e"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/d6822acb_abda_422d_b915_fee05a0fb8cb"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/d8e718a1_c658_46f6_8cb0_1c89ec8b561b"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/d9293309_a8ec_465b_b310_9ef09ae6a3ae"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/dcfc7eab_cb9f_42d2_9335_0a4282359a0b"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/de257885_9044_498e_bcb8_837c0925ef79"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/e1c8fa57_71f6_4c92_be1a_24163ae9f98c"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/e3002eef_d043_40a2_8ff3_a00ff68ab673"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/e7a2d0ca_e90d_479d_a3a3_b49b36709961"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/ee3859ae_d843_43a8_8eb8_cd69d5515eb1"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/ef452aa7_3f4b_4809_95e6_e91f1fd4597d"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/ef7ddcbe_8612_470c_ab4d_37ead40417cd"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/f73be887_6d4a_4f06_ab7d_11b0fcb8c224"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/f8214694_8492_4ebb_8768_abaae4b49ae5"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/0a05cf99_4a00_4a4d_aae8_531e68eae2ad"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/0a1e585b_ca43_4176_a204_f4424c699fb7"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/0f728b1b_0194_4589_953b_81a7c83c7336"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/1b9b86e3_e9e8_4624_bc37_f574622972b8"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/1ea78ed1_2451_4dd7_ad01_25c34e1f3a2f"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/123cd0a8_861a_442f_be7c_51dbecd182af"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/13d1c8aa_cd94_4145_8639_2237dd892ab8"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/17ea9cb3_8163_47b9_a10d_9e049818df20"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/2cc07981_7211_48a6_970f_c50ee44b71fb"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/2ea882ae_c7bc_4e07_bfe9_f8ea6f2afc92"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/2f1b45e8_ce1c_45f9_b697_a708dfc5e0da"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/24989bed_47c9_4ca6_8e50_8981d9468208"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/265d7dfe_eb66_469a_9c0a_f07dd49ed366"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/280dc42e_089f_4399_a9e3_669873411bc0"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/293d95e9_33aa_4c00_a0e3_e00bcf4fe965"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/3f3151e4_f63e_4593_a565_bd6717800560"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/3f772ae0_6ea8_4137_8a2c_67821d26dc5d"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/3fb6cb7f_a21a_46a9_b67a_886ec7af7ff2"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/3ff9db47_ecbc_4b7a_b408_e0b7474c769f"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/317a06ef_4670_430f_864b_c129f1630f2c"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/35b1168b_9f31_4543_8692_8b78ea2e9da9"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/382cc38f_9b11_4e6e_9649_d452f67af451"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/387b7e09_6677_48fe_aac7_5a59dab6816f"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/4b63b578_7b62_434a_960d_b67d1368441e"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/4b68eecd_2879_4734_b4c7_aef684d31e96"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/4c8003de_93ae_4b45_b6ca_8a4cca856902"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/4e2ae139_f830_435e_8257_4ca6ec27c202"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/4ed42572_d750_43a4_b304_2f58a4cb6ae0"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/4fc9c0ab_cdb9_40a8_a3a1_75181bcdf24d"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/404a74cb_aa75_43df_8e6e_0df5697997ac"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/45c772cf_a06f_4128_b50a_6e0c03c06b95"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/48aa9645_e0a6_4dad_b3e3_44ea9ce7f1a4"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/49531a3b_2c27_4e08_8bc0_032b334386c4"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/5aa63598_14db_4492_af04_8cd6be4649fa"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/5d124a6c_8432_48c9_854e_1f231d4e6732"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/5dd12ad5_9eff_45c7_8851_532e7f3358b2"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/5e073483_b535_4e88_a315_07b5bb9761dc"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/5edf2b89_bd76_4b06_81e0_114859978625"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/52367238_f9a1_4a9c_a51a_eec255ea34d6"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/528b482e_6f88_4802_a6c1_580e719ac875"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/54a05855_ad33_458a_b1b2_8a9637f64557"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/54df5867_a664_43de_974a_b363b6b9e277"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/54ea86a3_beb1_4260_a58b_85b617d58d39"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/548a9f66_294a_42fb_8fb4_07f2c44da80c"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/57976ba1_bef8_40c2_967a_d45e7e196d10"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/589889c8_9620_4534_b3c3_ff1f5643e9de"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/59bb33bd_fcb0_40b8_94b6_f0c0006ed1f1"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/59dc3cf8_d141_40ae_9f44_7154d268027d"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/6a4f1dd7_f712_4af6_bccd_301f09a0e413"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/6a9479e5_1422_4fae_8032_030d260a42ba"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/6afd5f8c_9f71_4429_bbd0_306b54a0373a"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/6c2488c7_ff93_46fd_b2a2_23d3c7717c6c"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/6d61738b_691e_4716_bffa_1e94d54bd3c3"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/6fe3c658_b439_462b_b44c_6a5e5386d8b8"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/60d7702d_dd13_4c20_8ab5_4bb32a6d17ec"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/639fc73c_4032_4bf1_a7f7_616aee72da37"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/678c7942_01fa_425c_b49f_a05c92853043"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/69674fcf_857b_48bc_ac0f_3f323a14c277"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/7b17c335_3786_4153_abfb_c5a1ff5acb81"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/7fe74a46_6a41_4e16_a458_b770f3f75191"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/70c88e97_0220_454d_b10b_d576e31c783a"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/71a0397f_ba45_4526_9333_fe80315e5279"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/73077938_ee11_470e_9df5_f0f9a7853a14"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/741121d9_740c_4b10_9749_af07f1a98e0a"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/7862ee2e_6a54_43cd_a6d4_0d1fff3afa6d"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/8a50b219_a0bd_40b4_a986_c3129f476a11"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/8cbab33f_a2e8_4138_a3b4_25596d2714f8"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/82fa0a10_cea9_4eeb_901b_17abcc1dd3b3"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/84075ec3_a5c5_40db_8e3d_7d0a0fc428e0"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/85ccf77c_2ef6_4308_bc7e_3a0fc548be72"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/85390192_df7e_45d4_9cdf_ba5794041c18"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/857eb73e_c97d_4d2b_91c2_6856efc90e25"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/88848e30_af9a_401f_8600_c538172d6433"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/899e8205_b8e2_42ec_b57f_c4bd5939950e"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/9baa973c_3139_4f72_b644_3d8d057a3050"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/9c09eb18_5027_4bca_8c0d_5698cf8c969d"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/9c280c3f_86b5_434b_b533_e3d5777b8606"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/90ae9cb2_724c_4285_9229_09089cbff2dc"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/90de5361_d15d_45df_9ad9_a175cd7561f9"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/909e9942_71b9_43f7_9a2b_cc9f688ac683"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/94c97939_d6e8_4012_a564_599a12c10c53"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/95048f35_cacc_44e2_8031_715092da97ae"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/97411ca0_15d7_48c7_bf98_87cad8497277"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/9799488f_0907_49ca_aa8d_91ee5af5f718"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/993c41c2_f1da_4316_bd01_bf48be58771c"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/9992615d_f93f_4470_b156_e83d29276727"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/a32888fa_def0_4597_9d21_713ddca8e57c"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/a3eadbad_ab2e_4e23_a0cf_4dc0955d9519"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/a3eadbad_ab2e_4e23_a0cf_4dc0955d9519"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/CLASS-MEMBER_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/a5202b4d_c470_488d_9090_e5c70f9af13f"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/DESIGNATION_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/a5d22c99_e33c_4299_a0ed_81f81a17a8f7"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/a3eadbad_ab2e_4e23_a0cf_4dc0955d9519"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/a779b32e_96a4_4ee4_b52d_09547f56bfab"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/548a9f66_294a_42fb_8fb4_07f2c44da80c"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/a897d408_5ad9_4880_9bf3_fe7b375615d3"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/PROPERTY-BEARER_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/a926bfa8_1190_4667_bac3_0308afe6bf4e"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/RELATIONS_FOR_ALPHANUMERIC_VALUES"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/a9342338_5a56_451c_a20e_33385ad1297e"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/FORMAL_ONTOLOGICAL_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/ab74eadb_f6f6_40bb_a20a_6e1eabc7cd34"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/PROPERTY-BEARER_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/ae4df0de_530f_44c4_a1f0_bcf5bd92fefb"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/FORMAL_ONTOLOGICAL_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/b2d0ea96_430d_4cc3_b362_b58d8f3255bc"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/PROPERTY-BEARER_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/b310ad58_9f4f_463e_a363_410083a768d3"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/CLASS-CLASS_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/b389dfd7_672a_4fbc_9f41_21c6b5497a6b"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/e3002eef_d043_40a2_8ff3_a00ff68ab673"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/b4549d91_2ff4_4abd_97e8_f0f1907ffc07"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/RELATIONS_FOR_ALPHANUMERIC_VALUES"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/b64b41f5_9dee_4703_9cc9_b5c2e5599c11"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/PROPERTY-BEARER_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/b86a9e5b_8775_4694_8611_24dd513ba2ef"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/RELATIONS_FOR_ALPHANUMERIC_VALUES"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/be618960_1689_4990_b3cd_563ba2693cd2"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/548a9f66_294a_42fb_8fb4_07f2c44da80c"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/c05092d4_d174_43a2_92e6_b725528bfc64"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/548a9f66_294a_42fb_8fb4_07f2c44da80c"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/c15baffe_d70d_4fab_92e6_1c46060540a4"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/3f3151e4_f63e_4593_a565_bd6717800560"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/c1c4b016_fafd_4c25_a75f_ae9ab69b23e5"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/a3eadbad_ab2e_4e23_a0cf_4dc0955d9519"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/c59a4142_3d01_4a60_8648_9f388a738e92"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/548a9f66_294a_42fb_8fb4_07f2c44da80c"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/ca03e90f_6b3b_4b70_ba5e_7c38ff7ffd2d"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/548a9f66_294a_42fb_8fb4_07f2c44da80c"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/cb447a71_e26d_42c9_9388_2f79b786798b"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/ACTIVITY-ACTOR_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/cd8c2057_0d14_4ff4_884c_c39cfc070d52"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/DESIGNATION_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/cdd489cb_e7a7_462a_8ae4_106e22cdd195"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/e3002eef_d043_40a2_8ff3_a00ff68ab673"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/d0ca7c31_92bd_4e7b_a81c_de75876c0638"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/ACTIVITY-ACTOR_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/d1f94593_b437_42e4_9556_fa828dd94c39"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/ACTIVITY-ACTOR_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/d3aea42c_a03c_44e9_8529_62cb185a427e"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/CLASS-CLASS_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/d6822acb_abda_422d_b915_fee05a0fb8cb"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/FORMAL_ONTOLOGICAL_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/d9293309_a8ec_465b_b310_9ef09ae6a3ae"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/RELATIONS_FOR_ALPHANUMERIC_VALUES"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/de257885_9044_498e_bcb8_837c0925ef79"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/ACTIVITY-ACTOR_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/e1c8fa57_71f6_4c92_be1a_24163ae9f98c"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/5dd12ad5_9eff_45c7_8851_532e7f3358b2"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/e7a2d0ca_e90d_479d_a3a3_b49b36709961"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/e3002eef_d043_40a2_8ff3_a00ff68ab673"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/ee3859ae_d843_43a8_8eb8_cd69d5515eb1"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/RELATIONS_BETWEEN_TERMS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/ef452aa7_3f4b_4809_95e6_e91f1fd4597d"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/CLASS-CLASS_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/ef7ddcbe_8612_470c_ab4d_37ead40417cd"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/PROPERTY-BEARER_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/f73be887_6d4a_4f06_ab7d_11b0fcb8c224"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/PROPERTY-BEARER_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/f8214694_8492_4ebb_8768_abaae4b49ae5"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/a3eadbad_ab2e_4e23_a0cf_4dc0955d9519"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/0a1e585b_ca43_4176_a204_f4424c699fb7"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/PROPERTY-BEARER_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/1b9b86e3_e9e8_4624_bc37_f574622972b8"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/CLASS-CLASS_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/1ea78ed1_2451_4dd7_ad01_25c34e1f3a2f"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/e3002eef_d043_40a2_8ff3_a00ff68ab673"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/123cd0a8_861a_442f_be7c_51dbecd182af"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/a3eadbad_ab2e_4e23_a0cf_4dc0955d9519"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/13d1c8aa_cd94_4145_8639_2237dd892ab8"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/DESIGNATION_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/2ea882ae_c7bc_4e07_bfe9_f8ea6f2afc92"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/FORMAL_ONTOLOGICAL_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/2f1b45e8_ce1c_45f9_b697_a708dfc5e0da"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/e3002eef_d043_40a2_8ff3_a00ff68ab673"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/24989bed_47c9_4ca6_8e50_8981d9468208"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/PROPERTY-BEARER_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/265d7dfe_eb66_469a_9c0a_f07dd49ed366"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/e3002eef_d043_40a2_8ff3_a00ff68ab673"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/280dc42e_089f_4399_a9e3_669873411bc0"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/e3002eef_d043_40a2_8ff3_a00ff68ab673"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/293d95e9_33aa_4c00_a0e3_e00bcf4fe965"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/548a9f66_294a_42fb_8fb4_07f2c44da80c"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/3f3151e4_f63e_4593_a565_bd6717800560"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/DESIGNATION_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/3f772ae0_6ea8_4137_8a2c_67821d26dc5d"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/e3002eef_d043_40a2_8ff3_a00ff68ab673"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/3fb6cb7f_a21a_46a9_b67a_886ec7af7ff2"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/e3002eef_d043_40a2_8ff3_a00ff68ab673"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/3ff9db47_ecbc_4b7a_b408_e0b7474c769f"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/PROPERTY-BEARER_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/35b1168b_9f31_4543_8692_8b78ea2e9da9"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/548a9f66_294a_42fb_8fb4_07f2c44da80c"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/382cc38f_9b11_4e6e_9649_d452f67af451"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/CLASS-CLASS_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/387b7e09_6677_48fe_aac7_5a59dab6816f"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/ACTIVITY-ACTOR_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/4c8003de_93ae_4b45_b6ca_8a4cca856902"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/PROPERTY-BEARER_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/4e2ae139_f830_435e_8257_4ca6ec27c202"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/ACTIVITY-ACTOR_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/4fc9c0ab_cdb9_40a8_a3a1_75181bcdf24d"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/548a9f66_294a_42fb_8fb4_07f2c44da80c"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/404a74cb_aa75_43df_8e6e_0df5697997ac"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/e3002eef_d043_40a2_8ff3_a00ff68ab673"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/45c772cf_a06f_4128_b50a_6e0c03c06b95"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/CLASS-CLASS_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/48aa9645_e0a6_4dad_b3e3_44ea9ce7f1a4"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/PROPERTY-BEARER_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/49531a3b_2c27_4e08_8bc0_032b334386c4"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/5aa63598_14db_4492_af04_8cd6be4649fa"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/RELATIONS_BETWEEN_TERMS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/5d124a6c_8432_48c9_854e_1f231d4e6732"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/a3eadbad_ab2e_4e23_a0cf_4dc0955d9519"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/5dd12ad5_9eff_45c7_8851_532e7f3358b2"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/DESIGNATION_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/5e073483_b535_4e88_a315_07b5bb9761dc"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/548a9f66_294a_42fb_8fb4_07f2c44da80c"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/5edf2b89_bd76_4b06_81e0_114859978625"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/548a9f66_294a_42fb_8fb4_07f2c44da80c"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/52367238_f9a1_4a9c_a51a_eec255ea34d6"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/a3eadbad_ab2e_4e23_a0cf_4dc0955d9519"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/528b482e_6f88_4802_a6c1_580e719ac875"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/ACTIVITY-ACTOR_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/54a05855_ad33_458a_b1b2_8a9637f64557"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/e3002eef_d043_40a2_8ff3_a00ff68ab673"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/57976ba1_bef8_40c2_967a_d45e7e196d10"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/548a9f66_294a_42fb_8fb4_07f2c44da80c"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/59bb33bd_fcb0_40b8_94b6_f0c0006ed1f1"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/ACTIVITY-ACTOR_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/59dc3cf8_d141_40ae_9f44_7154d268027d"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/ACTIVITY-ACTOR_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/6a4f1dd7_f712_4af6_bccd_301f09a0e413"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/548a9f66_294a_42fb_8fb4_07f2c44da80c"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/6afd5f8c_9f71_4429_bbd0_306b54a0373a"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/DESIGNATION_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/6c2488c7_ff93_46fd_b2a2_23d3c7717c6c"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/PROPERTY-BEARER_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/6d61738b_691e_4716_bffa_1e94d54bd3c3"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/RELATIONS_FOR_ALPHANUMERIC_VALUES"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/6fe3c658_b439_462b_b44c_6a5e5386d8b8"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/a3eadbad_ab2e_4e23_a0cf_4dc0955d9519"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/639fc73c_4032_4bf1_a7f7_616aee72da37"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/548a9f66_294a_42fb_8fb4_07f2c44da80c"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/678c7942_01fa_425c_b49f_a05c92853043"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/548a9f66_294a_42fb_8fb4_07f2c44da80c"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/69674fcf_857b_48bc_ac0f_3f323a14c277"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/3f3151e4_f63e_4593_a565_bd6717800560"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/7fe74a46_6a41_4e16_a458_b770f3f75191"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/ACTIVITY-ACTOR_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/73077938_ee11_470e_9df5_f0f9a7853a14"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/a3eadbad_ab2e_4e23_a0cf_4dc0955d9519"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/7862ee2e_6a54_43cd_a6d4_0d1fff3afa6d"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/PROPERTY-BEARER_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/8a50b219_a0bd_40b4_a986_c3129f476a11"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/DESIGNATION_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/8cbab33f_a2e8_4138_a3b4_25596d2714f8"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/ACTIVITY-ACTOR_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/82fa0a10_cea9_4eeb_901b_17abcc1dd3b3"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/5dd12ad5_9eff_45c7_8851_532e7f3358b2"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/84075ec3_a5c5_40db_8e3d_7d0a0fc428e0"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/ACTIVITY-ACTOR_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/85ccf77c_2ef6_4308_bc7e_3a0fc548be72"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/FORMAL_ONTOLOGICAL_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/85390192_df7e_45d4_9cdf_ba5794041c18"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/548a9f66_294a_42fb_8fb4_07f2c44da80c"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/88848e30_af9a_401f_8600_c538172d6433"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/RELATIONS_BETWEEN_TERMS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/9baa973c_3139_4f72_b644_3d8d057a3050"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/548a9f66_294a_42fb_8fb4_07f2c44da80c"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/9c09eb18_5027_4bca_8c0d_5698cf8c969d"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/548a9f66_294a_42fb_8fb4_07f2c44da80c"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/9c280c3f_86b5_434b_b533_e3d5777b8606"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/548a9f66_294a_42fb_8fb4_07f2c44da80c"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/90ae9cb2_724c_4285_9229_09089cbff2dc"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/e3002eef_d043_40a2_8ff3_a00ff68ab673"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/90de5361_d15d_45df_9ad9_a175cd7561f9"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/548a9f66_294a_42fb_8fb4_07f2c44da80c"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/909e9942_71b9_43f7_9a2b_cc9f688ac683"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/RELATIONS_FOR_ALPHANUMERIC_VALUES"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/94c97939_d6e8_4012_a564_599a12c10c53"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/RELATIONS_BETWEEN_TERMS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/95048f35_cacc_44e2_8031_715092da97ae"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/e3002eef_d043_40a2_8ff3_a00ff68ab673"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/97411ca0_15d7_48c7_bf98_87cad8497277"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/e3002eef_d043_40a2_8ff3_a00ff68ab673"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/9799488f_0907_49ca_aa8d_91ee5af5f718"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/PROPERTY-BEARER_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/993c41c2_f1da_4316_bd01_bf48be58771c"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/548a9f66_294a_42fb_8fb4_07f2c44da80c"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/9992615d_f93f_4470_b156_e83d29276727"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/PROPERTY-BEARER_RELATIONS"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/a5202b4d_c470_488d_9090_e5c70f9af13f"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/5dd12ad5_9eff_45c7_8851_532e7f3358b2"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/ae4df0de_530f_44c4_a1f0_bcf5bd92fefb"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/85ccf77c_2ef6_4308_bc7e_3a0fc548be72"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/cdd489cb_e7a7_462a_8ae4_106e22cdd195"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/54a05855_ad33_458a_b1b2_8a9637f64557"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/d6822acb_abda_422d_b915_fee05a0fb8cb"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/2ea882ae_c7bc_4e07_bfe9_f8ea6f2afc92"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/dcfc7eab_cb9f_42d2_9335_0a4282359a0b"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/6a9479e5_1422_4fae_8032_030d260a42ba"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/13d1c8aa_cd94_4145_8639_2237dd892ab8"/>
+        <ObjectProperty IRI="https://purl.org/rrovetto/ontologies/Generic-Relations/8a50b219_a0bd_40b4_a986_c3129f476a11"/>
+    </InverseObjectProperties>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/ACTIVITY-ACTOR_RELATIONS</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/ACTIVITY-ACTOR_RELATIONS</IRI>
+        <Literal xml:lang="en">A temporary grouping for the relationships between activities, events, processes and their actors, enactors, participants, etc., so conceived.
+
+It thereby makes a distinction between the activity and that which engages in the activity. This should be contrasted with abstract models that do not make such a distinction but which only assert one or the other, i.e. which may commit to a particular metaphysical ontological account.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/ACTIVITY-ACTOR_RELATIONS</IRI>
+        <Literal xml:lang="en">DEVELOPMENT NOTE:
+
+Depending on the degree of abstraction and the intended meaning of the concepts (activity, process, etc.), this group of relations may be that of process and actor/partcipant/enactor.
+
+One characterization of activities, actors, and processes may be that activities are types of processes in which some actor engages. That is, given a certain definition of &apos;actor&apos;, processes may not involve actors. Further development needed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/ACTIVITY-ACTOR_RELATIONS</IRI>
+        <Literal xml:lang="en">ACTIVITY-ACTOR RELATIONS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/CLASS-CLASS_RELATIONS</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/CLASS-CLASS_RELATIONS</IRI>
+        <Literal xml:lang="en">A temporary grouping for the relationships between classes (categories) and other classes, i.e., class-level relations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/CLASS-CLASS_RELATIONS</IRI>
+        <Literal xml:lang="en">CLASS-CLASS RELATIONS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/CLASS-MEMBER_RELATIONS</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/CLASS-MEMBER_RELATIONS</IRI>
+        <Literal xml:lang="en">A temporary grouping for the relationships between classes (categories) and their members (individuals, instances, etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/CLASS-MEMBER_RELATIONS</IRI>
+        <Literal xml:lang="en">CLASS-MEMBER RELATIONS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/DESIGNATION_RELATIONS</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/DESIGNATION_RELATIONS</IRI>
+        <Literal xml:lang="en">A temporary grouping for relationships between (alpha)numeric identifiers/designations/signifiers/symbols.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/DESIGNATION_RELATIONS</IRI>
+        <Literal xml:lang="en">DESIGNATION RELATIONS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/FORMAL_ONTOLOGICAL_RELATIONS</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/FORMAL_ONTOLOGICAL_RELATIONS</IRI>
+        <Literal xml:lang="en">See &quot;The Four-Category Ontology&quot; by Lowe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/FORMAL_ONTOLOGICAL_RELATIONS</IRI>
+        <Literal xml:lang="en">FORMAL ONTOLOGICAL RELATIONS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/PROPERTY-BEARER_RELATIONS</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/PROPERTY-BEARER_RELATIONS</IRI>
+        <Literal xml:lang="en">A temporary grouping for relationships between the holder or bearer of a characteristic (property, feature, attribute, quality) and the characteristic itself.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/PROPERTY-BEARER_RELATIONS</IRI>
+        <Literal xml:lang="en">PROPERTY-BEARER RELATIONS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/RELATIONS_BETWEEN_TERMS</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/RELATIONS_BETWEEN_TERMS</IRI>
+        <Literal xml:lang="en">A temporary grouping for lexical or semantic relationships, i.e. relations between words.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/RELATIONS_BETWEEN_TERMS</IRI>
+        <Literal xml:lang="en">RELATIONS BETWEEN TERMS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/RELATIONS_FOR_ALPHANUMERIC_VALUES</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/RELATIONS_FOR_ALPHANUMERIC_VALUES</IRI>
+        <Literal xml:lang="en">A temporary grouping for relationships between a quantitative value or a qualitative value and that which has the particular value.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/RELATIONS_FOR_ALPHANUMERIC_VALUES</IRI>
+        <Literal xml:lang="en">RELATIONS FOR ALPHANUMERIC VALUES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/a32888fa_def0_4597_9d21_713ddca8e57c</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/a32888fa_def0_4597_9d21_713ddca8e57c</IRI>
+        <Literal xml:lang="en">instantiates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/a3eadbad_ab2e_4e23_a0cf_4dc0955d9519</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/a3eadbad_ab2e_4e23_a0cf_4dc0955d9519</IRI>
+        <Literal xml:lang="en">is-an-instance-of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/a5202b4d_c470_488d_9090_e5c70f9af13f</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/a5202b4d_c470_488d_9090_e5c70f9af13f</IRI>
+        <Literal xml:lang="en">is name of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/a5d22c99_e33c_4299_a0ed_81f81a17a8f7</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/a5d22c99_e33c_4299_a0ed_81f81a17a8f7</IRI>
+        <Literal xml:lang="en">has instance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/a661d2e0_6491_4b75_9ccc_bd76397023b6</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/a661d2e0_6491_4b75_9ccc_bd76397023b6</IRI>
+        <Literal xml:lang="en">has property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/a779b32e_96a4_4ee4_b52d_09547f56bfab</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/a779b32e_96a4_4ee4_b52d_09547f56bfab</IRI>
+        <Literal xml:lang="en">causally influences</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/a897d408_5ad9_4880_9bf3_fe7b375615d3</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/a897d408_5ad9_4880_9bf3_fe7b375615d3</IRI>
+        <Literal xml:lang="en">describes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/a926bfa8_1190_4667_bac3_0308afe6bf4e</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/a926bfa8_1190_4667_bac3_0308afe6bf4e</IRI>
+        <Literal xml:lang="en">has numeric value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/a9342338_5a56_451c_a20e_33385ad1297e</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/a9342338_5a56_451c_a20e_33385ad1297e</IRI>
+        <Literal xml:lang="en">is identical with</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/ab74eadb_f6f6_40bb_a20a_6e1eabc7cd34</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/ab74eadb_f6f6_40bb_a20a_6e1eabc7cd34</IRI>
+        <Literal xml:lang="en">Has attribute</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/ac76d815_d8dc_4325_9d19_9673e38ac5b4</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/ac76d815_d8dc_4325_9d19_9673e38ac5b4</IRI>
+        <Literal xml:lang="en">uses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/ae4df0de_530f_44c4_a1f0_bcf5bd92fefb</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/ae4df0de_530f_44c4_a1f0_bcf5bd92fefb</IRI>
+        <Literal xml:lang="en">is constituted by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/b2d0ea96_430d_4cc3_b362_b58d8f3255bc</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/b2d0ea96_430d_4cc3_b362_b58d8f3255bc</IRI>
+        <Literal xml:lang="en">is characterized by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/b310ad58_9f4f_463e_a363_410083a768d3</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/b310ad58_9f4f_463e_a363_410083a768d3</IRI>
+        <Literal xml:lang="en">is superclass of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/b389dfd7_672a_4fbc_9f41_21c6b5497a6b</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/b389dfd7_672a_4fbc_9f41_21c6b5497a6b</IRI>
+        <Literal xml:lang="en">is functional part of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/b4549d91_2ff4_4abd_97e8_f0f1907ffc07</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/b4549d91_2ff4_4abd_97e8_f0f1907ffc07</IRI>
+        <Literal xml:lang="en">has alphanumeric value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/b64b41f5_9dee_4703_9cc9_b5c2e5599c11</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/b64b41f5_9dee_4703_9cc9_b5c2e5599c11</IRI>
+        <Literal xml:lang="en">Has characteristic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/b86a9e5b_8775_4694_8611_24dd513ba2ef</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/b86a9e5b_8775_4694_8611_24dd513ba2ef</IRI>
+        <Literal xml:lang="en">has quantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/b9802c2e_68e2_430c_aab3_682f1c323003</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/b9802c2e_68e2_430c_aab3_682f1c323003</IRI>
+        <Literal xml:lang="en">Has value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/ba8d4095_9adf_42a0_b562_baf130f95141</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/ba8d4095_9adf_42a0_b562_baf130f95141</IRI>
+        <Literal xml:lang="en">has purpose</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/bd67b872_7a04_46a6_ba58_ed7fe70b06e7</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/bd67b872_7a04_46a6_ba58_ed7fe70b06e7</IRI>
+        <Literal xml:lang="en">formally represents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/be618960_1689_4990_b3cd_563ba2693cd2</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/be618960_1689_4990_b3cd_563ba2693cd2</IRI>
+        <Literal xml:lang="en">produces</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/c05092d4_d174_43a2_92e6_b725528bfc64</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/c05092d4_d174_43a2_92e6_b725528bfc64</IRI>
+        <Literal xml:lang="en">is cause event of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/c15baffe_d70d_4fab_92e6_1c46060540a4</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/c15baffe_d70d_4fab_92e6_1c46060540a4</IRI>
+        <Literal xml:lang="en">has alphanumeric identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/c1c4b016_fafd_4c25_a75f_ae9ab69b23e5</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/c1c4b016_fafd_4c25_a75f_ae9ab69b23e5</IRI>
+        <Literal xml:lang="en">has member</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/c59a4142_3d01_4a60_8648_9f388a738e92</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/c59a4142_3d01_4a60_8648_9f388a738e92</IRI>
+        <Literal xml:lang="en">is causally determined by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/ca03e90f_6b3b_4b70_ba5e_7c38ff7ffd2d</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/ca03e90f_6b3b_4b70_ba5e_7c38ff7ffd2d</IRI>
+        <Literal xml:lang="en">has causal part</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/cb447a71_e26d_42c9_9388_2f79b786798b</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/cb447a71_e26d_42c9_9388_2f79b786798b</IRI>
+        <Literal xml:lang="en">is agent of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/cd8c2057_0d14_4ff4_884c_c39cfc070d52</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/cd8c2057_0d14_4ff4_884c_c39cfc070d52</IRI>
+        <Literal xml:lang="en">denotes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/cdd489cb_e7a7_462a_8ae4_106e22cdd195</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/cdd489cb_e7a7_462a_8ae4_106e22cdd195</IRI>
+        <Literal xml:lang="en">is composed of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/ce572af0_3bcb_4955_8c7e_22810a9d1768</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/ce572af0_3bcb_4955_8c7e_22810a9d1768</IRI>
+        <Literal xml:lang="en">has term</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/d0ca7c31_92bd_4e7b_a81c_de75876c0638</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/d0ca7c31_92bd_4e7b_a81c_de75876c0638</IRI>
+        <Literal xml:lang="en">has agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/d1f94593_b437_42e4_9556_fa828dd94c39</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/d1f94593_b437_42e4_9556_fa828dd94c39</IRI>
+        <Literal xml:lang="en">is agent in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/d3aea42c_a03c_44e9_8529_62cb185a427e</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/d3aea42c_a03c_44e9_8529_62cb185a427e</IRI>
+        <Literal xml:lang="en">is-a-type-of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/d6822acb_abda_422d_b915_fee05a0fb8cb</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/d6822acb_abda_422d_b915_fee05a0fb8cb</IRI>
+        <Literal xml:lang="en">is dependent on</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/d8e718a1_c658_46f6_8cb0_1c89ec8b561b</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/d8e718a1_c658_46f6_8cb0_1c89ec8b561b</IRI>
+        <Literal xml:lang="en">is occupied by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/d9293309_a8ec_465b_b310_9ef09ae6a3ae</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/d9293309_a8ec_465b_b310_9ef09ae6a3ae</IRI>
+        <Literal xml:lang="en">Is value of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/dcfc7eab_cb9f_42d2_9335_0a4282359a0b</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/dcfc7eab_cb9f_42d2_9335_0a4282359a0b</IRI>
+        <Literal xml:lang="en">realizes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/de257885_9044_498e_bcb8_837c0925ef79</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/de257885_9044_498e_bcb8_837c0925ef79</IRI>
+        <Literal xml:lang="en">is participant of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/e1c8fa57_71f6_4c92_be1a_24163ae9f98c</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/e1c8fa57_71f6_4c92_be1a_24163ae9f98c</IRI>
+        <Literal xml:lang="en">has common name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/e3002eef_d043_40a2_8ff3_a00ff68ab673</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/e3002eef_d043_40a2_8ff3_a00ff68ab673</IRI>
+        <Literal xml:lang="en">A temporary grouping for relationships among parts, and between parts and their whole, i.e., merological or partonomic relations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/e3002eef_d043_40a2_8ff3_a00ff68ab673</IRI>
+        <Literal xml:lang="en">PARTHOOD RELATIONS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/e7a2d0ca_e90d_479d_a3a3_b49b36709961</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/e7a2d0ca_e90d_479d_a3a3_b49b36709961</IRI>
+        <Literal xml:lang="en">has part</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/ee3859ae_d843_43a8_8eb8_cd69d5515eb1</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/ee3859ae_d843_43a8_8eb8_cd69d5515eb1</IRI>
+        <Literal xml:lang="en">is narrower than</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/ef452aa7_3f4b_4809_95e6_e91f1fd4597d</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/ef452aa7_3f4b_4809_95e6_e91f1fd4597d</IRI>
+        <Literal xml:lang="en">is a subcategory of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/ef7ddcbe_8612_470c_ab4d_37ead40417cd</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/ef7ddcbe_8612_470c_ab4d_37ead40417cd</IRI>
+        <Literal xml:lang="en">inheres in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/f73be887_6d4a_4f06_ab7d_11b0fcb8c224</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/f73be887_6d4a_4f06_ab7d_11b0fcb8c224</IRI>
+        <Literal xml:lang="en">is defined by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/f8214694_8492_4ebb_8768_abaae4b49ae5</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/f8214694_8492_4ebb_8768_abaae4b49ae5</IRI>
+        <Literal xml:lang="en">is an individual of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/0a05cf99_4a00_4a4d_aae8_531e68eae2ad</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/0a05cf99_4a00_4a4d_aae8_531e68eae2ad</IRI>
+        <Literal xml:lang="en">has competency question</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/0a1e585b_ca43_4176_a204_f4424c699fb7</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/0a1e585b_ca43_4176_a204_f4424c699fb7</IRI>
+        <Literal xml:lang="en">bears</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/0f728b1b_0194_4589_953b_81a7c83c7336</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/0f728b1b_0194_4589_953b_81a7c83c7336</IRI>
+        <Literal xml:lang="en">hinders</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/1b9b86e3_e9e8_4624_bc37_f574622972b8</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/1b9b86e3_e9e8_4624_bc37_f574622972b8</IRI>
+        <Literal xml:lang="en">is a subclass of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/1ea78ed1_2451_4dd7_ad01_25c34e1f3a2f</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/1ea78ed1_2451_4dd7_ad01_25c34e1f3a2f</IRI>
+        <Literal xml:lang="en">part of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/123cd0a8_861a_442f_be7c_51dbecd182af</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/123cd0a8_861a_442f_be7c_51dbecd182af</IRI>
+        <Literal xml:lang="en">has element</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/13d1c8aa_cd94_4145_8639_2237dd892ab8</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/13d1c8aa_cd94_4145_8639_2237dd892ab8</IRI>
+        <Literal xml:lang="en">is signified by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/17ea9cb3_8163_47b9_a10d_9e049818df20</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/17ea9cb3_8163_47b9_a10d_9e049818df20</IRI>
+        <Literal xml:lang="en">facilitates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/2cc07981_7211_48a6_970f_c50ee44b71fb</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/2cc07981_7211_48a6_970f_c50ee44b71fb</IRI>
+        <Literal xml:lang="en">has function</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/2ea882ae_c7bc_4e07_bfe9_f8ea6f2afc92</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/2ea882ae_c7bc_4e07_bfe9_f8ea6f2afc92</IRI>
+        <Literal xml:lang="en">depends on</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/2f1b45e8_ce1c_45f9_b697_a708dfc5e0da</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/2f1b45e8_ce1c_45f9_b697_a708dfc5e0da</IRI>
+        <Literal xml:lang="en">has proper part</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/24989bed_47c9_4ca6_8e50_8981d9468208</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/24989bed_47c9_4ca6_8e50_8981d9468208</IRI>
+        <Literal xml:lang="en">characterizes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/265d7dfe_eb66_469a_9c0a_f07dd49ed366</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/265d7dfe_eb66_469a_9c0a_f07dd49ed366</IRI>
+        <Literal xml:lang="en">is component of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/280dc42e_089f_4399_a9e3_669873411bc0</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/280dc42e_089f_4399_a9e3_669873411bc0</IRI>
+        <Literal xml:lang="en">is subsystem of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/293d95e9_33aa_4c00_a0e3_e00bcf4fe965</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/293d95e9_33aa_4c00_a0e3_e00bcf4fe965</IRI>
+        <Literal xml:lang="en">indirectly causes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/3f3151e4_f63e_4593_a565_bd6717800560</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/3f3151e4_f63e_4593_a565_bd6717800560</IRI>
+        <Literal xml:lang="en">has identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/3f772ae0_6ea8_4137_8a2c_67821d26dc5d</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/3f772ae0_6ea8_4137_8a2c_67821d26dc5d</IRI>
+        <Literal xml:lang="en">has causal part</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/3fb6cb7f_a21a_46a9_b67a_886ec7af7ff2</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/3fb6cb7f_a21a_46a9_b67a_886ec7af7ff2</IRI>
+        <Literal xml:lang="en">has component</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/3ff9db47_ecbc_4b7a_b408_e0b7474c769f</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/3ff9db47_ecbc_4b7a_b408_e0b7474c769f</IRI>
+        <Literal xml:lang="en">exemplifies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/317a06ef_4670_430f_864b_c129f1630f2c</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/317a06ef_4670_430f_864b_c129f1630f2c</IRI>
+        <Literal xml:lang="en">occupies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/35b1168b_9f31_4543_8692_8b78ea2e9da9</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/35b1168b_9f31_4543_8692_8b78ea2e9da9</IRI>
+        <Literal xml:lang="en">causally contributes to</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/382cc38f_9b11_4e6e_9649_d452f67af451</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/382cc38f_9b11_4e6e_9649_d452f67af451</IRI>
+        <Literal xml:lang="en">is-a-kind-of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/387b7e09_6677_48fe_aac7_5a59dab6816f</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/387b7e09_6677_48fe_aac7_5a59dab6816f</IRI>
+        <Literal xml:lang="en">engages in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/4b63b578_7b62_434a_960d_b67d1368441e</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/4b63b578_7b62_434a_960d_b67d1368441e</IRI>
+        <Literal xml:lang="en">uses reasoner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/4b68eecd_2879_4734_b4c7_aef684d31e96</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/4b68eecd_2879_4734_b4c7_aef684d31e96</IRI>
+        <Literal xml:lang="en">relates to</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/4c8003de_93ae_4b45_b6ca_8a4cca856902</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/4c8003de_93ae_4b45_b6ca_8a4cca856902</IRI>
+        <Literal xml:lang="en">Is attribute of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/4e2ae139_f830_435e_8257_4ca6ec27c202</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/4e2ae139_f830_435e_8257_4ca6ec27c202</IRI>
+        <Literal xml:lang="en">is actor in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/4ed42572_d750_43a4_b304_2f58a4cb6ae0</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/4ed42572_d750_43a4_b304_2f58a4cb6ae0</IRI>
+        <Literal xml:lang="en">represents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/4fc9c0ab_cdb9_40a8_a3a1_75181bcdf24d</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/4fc9c0ab_cdb9_40a8_a3a1_75181bcdf24d</IRI>
+        <Literal xml:lang="en">is directly caused by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/404a74cb_aa75_43df_8e6e_0df5697997ac</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/404a74cb_aa75_43df_8e6e_0df5697997ac</IRI>
+        <Literal xml:lang="en">has functional part</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/45c772cf_a06f_4128_b50a_6e0c03c06b95</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/45c772cf_a06f_4128_b50a_6e0c03c06b95</IRI>
+        <Literal xml:lang="en">is supercategory of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/48aa9645_e0a6_4dad_b3e3_44ea9ce7f1a4</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/48aa9645_e0a6_4dad_b3e3_44ea9ce7f1a4</IRI>
+        <Literal xml:lang="en">defines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/49531a3b_2c27_4e08_8bc0_032b334386c4</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/49531a3b_2c27_4e08_8bc0_032b334386c4</IRI>
+        <Literal xml:lang="en">is feature of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/5aa63598_14db_4492_af04_8cd6be4649fa</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/5aa63598_14db_4492_af04_8cd6be4649fa</IRI>
+        <Literal xml:lang="en">is broader than</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/5d124a6c_8432_48c9_854e_1f231d4e6732</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/5d124a6c_8432_48c9_854e_1f231d4e6732</IRI>
+        <Literal xml:lang="en">has type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/5dd12ad5_9eff_45c7_8851_532e7f3358b2</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/5dd12ad5_9eff_45c7_8851_532e7f3358b2</IRI>
+        <Literal xml:lang="en">has name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/5e073483_b535_4e88_a315_07b5bb9761dc</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/5e073483_b535_4e88_a315_07b5bb9761dc</IRI>
+        <Literal xml:lang="en">is cause of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/5edf2b89_bd76_4b06_81e0_114859978625</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/5edf2b89_bd76_4b06_81e0_114859978625</IRI>
+        <Literal xml:lang="en">causally relevant to</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/52367238_f9a1_4a9c_a51a_eec255ea34d6</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/52367238_f9a1_4a9c_a51a_eec255ea34d6</IRI>
+        <Literal xml:lang="en">is a member of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/528b482e_6f88_4802_a6c1_580e719ac875</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/528b482e_6f88_4802_a6c1_580e719ac875</IRI>
+        <Literal xml:lang="en">participates in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/54a05855_ad33_458a_b1b2_8a9637f64557</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/54a05855_ad33_458a_b1b2_8a9637f64557</IRI>
+        <Literal xml:lang="en">composes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/54df5867_a664_43de_974a_b363b6b9e277</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/54df5867_a664_43de_974a_b363b6b9e277</IRI>
+        <Literal xml:lang="en">is generated by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/54ea86a3_beb1_4260_a58b_85b617d58d39</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/54ea86a3_beb1_4260_a58b_85b617d58d39</IRI>
+        <Literal xml:lang="en">has user</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/548a9f66_294a_42fb_8fb4_07f2c44da80c</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/548a9f66_294a_42fb_8fb4_07f2c44da80c</IRI>
+        <Literal xml:lang="en">A temporary grouping (ALL CAPITALIZED LETTERS) for causal or causative relations. 
+
+As such this may assume that causality or causation is a relationship. Contrast this with other account of causality/causation where it is not a relationship.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/548a9f66_294a_42fb_8fb4_07f2c44da80c</IRI>
+        <Literal xml:lang="en">CAUSAL RELATIONS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/57976ba1_bef8_40c2_967a_d45e7e196d10</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/57976ba1_bef8_40c2_967a_d45e7e196d10</IRI>
+        <Literal xml:lang="en">causally related to</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/589889c8_9620_4534_b3c3_ff1f5643e9de</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/589889c8_9620_4534_b3c3_ff1f5643e9de</IRI>
+        <Literal xml:lang="en">is produced by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/59bb33bd_fcb0_40b8_94b6_f0c0006ed1f1</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/59bb33bd_fcb0_40b8_94b6_f0c0006ed1f1</IRI>
+        <Literal xml:lang="en">is enacted by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/59dc3cf8_d141_40ae_9f44_7154d268027d</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/59dc3cf8_d141_40ae_9f44_7154d268027d</IRI>
+        <Literal xml:lang="en">has actor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/6a4f1dd7_f712_4af6_bccd_301f09a0e413</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/6a4f1dd7_f712_4af6_bccd_301f09a0e413</IRI>
+        <Literal xml:lang="en">is indirectly caused by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/6a9479e5_1422_4fae_8032_030d260a42ba</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/6a9479e5_1422_4fae_8032_030d260a42ba</IRI>
+        <Literal xml:lang="en">has realization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/6afd5f8c_9f71_4429_bbd0_306b54a0373a</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/6afd5f8c_9f71_4429_bbd0_306b54a0373a</IRI>
+        <Literal xml:lang="en">designates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/6c2488c7_ff93_46fd_b2a2_23d3c7717c6c</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/6c2488c7_ff93_46fd_b2a2_23d3c7717c6c</IRI>
+        <Literal xml:lang="en">is bearer of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/6d61738b_691e_4716_bffa_1e94d54bd3c3</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/6d61738b_691e_4716_bffa_1e94d54bd3c3</IRI>
+        <Literal xml:lang="en">has property value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/6fe3c658_b439_462b_b44c_6a5e5386d8b8</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/6fe3c658_b439_462b_b44c_6a5e5386d8b8</IRI>
+        <Literal xml:lang="en">is an instance of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/60d7702d_dd13_4c20_8ab5_4bb32a6d17ec</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/60d7702d_dd13_4c20_8ab5_4bb32a6d17ec</IRI>
+        <Literal xml:lang="en">is related to</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/639fc73c_4032_4bf1_a7f7_616aee72da37</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/639fc73c_4032_4bf1_a7f7_616aee72da37</IRI>
+        <Literal xml:lang="en">has cause</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/678c7942_01fa_425c_b49f_a05c92853043</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/678c7942_01fa_425c_b49f_a05c92853043</IRI>
+        <Literal xml:lang="en">causally determines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/69674fcf_857b_48bc_ac0f_3f323a14c277</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/69674fcf_857b_48bc_ac0f_3f323a14c277</IRI>
+        <Literal xml:lang="en">has numerical identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/7b17c335_3786_4153_abfb_c5a1ff5acb81</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/7b17c335_3786_4153_abfb_c5a1ff5acb81</IRI>
+        <Literal xml:lang="en">generates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/7fe74a46_6a41_4e16_a458_b770f3f75191</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/7fe74a46_6a41_4e16_a458_b770f3f75191</IRI>
+        <Literal xml:lang="en">has participant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/70c88e97_0220_454d_b10b_d576e31c783a</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/70c88e97_0220_454d_b10b_d576e31c783a</IRI>
+        <Literal xml:lang="en">is characteristic of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/71a0397f_ba45_4526_9333_fe80315e5279</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/71a0397f_ba45_4526_9333_fe80315e5279</IRI>
+        <Literal xml:lang="en">is function of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/73077938_ee11_470e_9df5_f0f9a7853a14</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/73077938_ee11_470e_9df5_f0f9a7853a14</IRI>
+        <Literal xml:lang="en">is an element of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/741121d9_740c_4b10_9749_af07f1a98e0a</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/741121d9_740c_4b10_9749_af07f1a98e0a</IRI>
+        <Literal xml:lang="en">is about</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/7862ee2e_6a54_43cd_a6d4_0d1fff3afa6d</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/7862ee2e_6a54_43cd_a6d4_0d1fff3afa6d</IRI>
+        <Literal xml:lang="en">is described by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/8a50b219_a0bd_40b4_a986_c3129f476a11</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/8a50b219_a0bd_40b4_a986_c3129f476a11</IRI>
+        <Literal xml:lang="en">signifies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/8cbab33f_a2e8_4138_a3b4_25596d2714f8</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/8cbab33f_a2e8_4138_a3b4_25596d2714f8</IRI>
+        <Literal xml:lang="en">enacts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/82fa0a10_cea9_4eeb_901b_17abcc1dd3b3</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/82fa0a10_cea9_4eeb_901b_17abcc1dd3b3</IRI>
+        <Literal xml:lang="en">is common name of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/84075ec3_a5c5_40db_8e3d_7d0a0fc428e0</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/84075ec3_a5c5_40db_8e3d_7d0a0fc428e0</IRI>
+        <Literal xml:lang="en">is actor of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/85ccf77c_2ef6_4308_bc7e_3a0fc548be72</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/85ccf77c_2ef6_4308_bc7e_3a0fc548be72</IRI>
+        <Literal xml:lang="en">constitutes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/85390192_df7e_45d4_9cdf_ba5794041c18</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/85390192_df7e_45d4_9cdf_ba5794041c18</IRI>
+        <Literal xml:lang="en">has cause event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/857eb73e_c97d_4d2b_91c2_6856efc90e25</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/857eb73e_c97d_4d2b_91c2_6856efc90e25</IRI>
+        <Literal xml:lang="en">has developer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/88848e30_af9a_401f_8600_c538172d6433</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/88848e30_af9a_401f_8600_c538172d6433</IRI>
+        <Literal xml:lang="en">is more specific than</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/899e8205_b8e2_42ec_b57f_c4bd5939950e</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/899e8205_b8e2_42ec_b57f_c4bd5939950e</IRI>
+        <Literal xml:lang="en">has application</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/9baa973c_3139_4f72_b644_3d8d057a3050</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/9baa973c_3139_4f72_b644_3d8d057a3050</IRI>
+        <Literal xml:lang="en">is causal contributor of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/9c09eb18_5027_4bca_8c0d_5698cf8c969d</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/9c09eb18_5027_4bca_8c0d_5698cf8c969d</IRI>
+        <Literal xml:lang="en">causes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/9c280c3f_86b5_434b_b533_e3d5777b8606</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/9c280c3f_86b5_434b_b533_e3d5777b8606</IRI>
+        <Literal xml:lang="en">is causally influenced by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/90ae9cb2_724c_4285_9229_09089cbff2dc</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/90ae9cb2_724c_4285_9229_09089cbff2dc</IRI>
+        <Literal xml:lang="en">is causal part of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/90de5361_d15d_45df_9ad9_a175cd7561f9</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/90de5361_d15d_45df_9ad9_a175cd7561f9</IRI>
+        <Literal xml:lang="en">directly causes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/909e9942_71b9_43f7_9a2b_cc9f688ac683</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/909e9942_71b9_43f7_9a2b_cc9f688ac683</IRI>
+        <Literal xml:lang="en">has attribute value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/94c97939_d6e8_4012_a564_599a12c10c53</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/94c97939_d6e8_4012_a564_599a12c10c53</IRI>
+        <Literal xml:lang="en">is more general than</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/95048f35_cacc_44e2_8031_715092da97ae</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/95048f35_cacc_44e2_8031_715092da97ae</IRI>
+        <Literal xml:lang="en">has subsystem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/97411ca0_15d7_48c7_bf98_87cad8497277</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/97411ca0_15d7_48c7_bf98_87cad8497277</IRI>
+        <Literal xml:lang="en">is proper part of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/9799488f_0907_49ca_aa8d_91ee5af5f718</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/9799488f_0907_49ca_aa8d_91ee5af5f718</IRI>
+        <Literal xml:lang="en">Is property of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/993c41c2_f1da_4316_bd01_bf48be58771c</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/993c41c2_f1da_4316_bd01_bf48be58771c</IRI>
+        <Literal xml:lang="en">is causal part of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/9992615d_f93f_4470_b156_e83d29276727</IRI>
+        <IRI>http://orcid.org/0000-0003-3835-7817</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/rrovetto/ontologies/Generic-Relations/9992615d_f93f_4470_b156_e83d29276727</IRI>
+        <Literal xml:lang="en">Has feature</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
