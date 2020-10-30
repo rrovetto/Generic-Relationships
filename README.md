@@ -9,9 +9,9 @@ Relationship ontologies include:
 - The Generic Relatonship Ontology / The Relationship Ontology
 
 ## Features 
-- _Neutrality_ - The ontology(s) aims to be neutral. It does not bias any particular universe of discourse (topic area, domain, subject matter, discipline, etc.), worldview (philosophical or otherwise).
+- **Neutrality** - The ontology(s) aims to be neutral. It does not bias any particular universe of discourse (topic area, domain, subject matter, discipline, etc.), worldview (philosophical or otherwise).
 
-- _Minimal commitments_ - The ontology(s) make  minimal or no commitments. It makes minimal or no ontological commitments at other degrees of abstraction; it does not force the user to make commitments. It does not require the user to use or import other ontologies, parts of ontologies, or tools.
+- **Minimal commitments** - The ontology(s) make  minimal or no commitments. It makes minimal or no ontological commitments at other degrees of abstraction; it does not force the user to make commitments. It does not require the user to use or import other ontologies, parts of ontologies, or tools.
 
 ## History/Rationale: 
 (_Specific user-case_) In the course of developing the Orbital Space Ontologies (https://purl.org/space-ontology), relations I need(ed) to assert were often generic and domain-neutral, i.e., they were not specific to the given domain ontology.
