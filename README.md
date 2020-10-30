@@ -22,4 +22,4 @@ Therefore, for widerapplicability, and given my education in ontology, it was im
 My university studies included a focus on highly abstract concepts, including those of relation(ship)s and how to characterize and formalize them.
 
 ## Copyright
-© 2018-2020, Robert John Rovetto.
+© 2018-2020, Robert John Rovetto. All rights reserved.
