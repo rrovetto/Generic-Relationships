@@ -1,8 +1,6 @@
 # The Generic Relationships Taxonomy/Ontology
 
-This repository provides a set of ontologies of generic, formal, widely applicable and often domain-neutral relationships ('relations' for short) that can be used in various other ontologies. The relational constructs (e.g., OWL Object or Data Properties) are displayed/represented by natural language terms (predicates such as 'is part of').
-
-Example relations include: has, has a, is a, part of, has part, causes, is caused by, ...
+This repository provides ontologies of generic, widely applicable (often domain-neutral) relationships ('relations' for short) that can be used in other ontologies. The relational constructs (e.g., OWL Object or Data Properties) are displayed/represented by natural language terms (predicates such as 'is part of'). Example relations include: has, has a, is a, part of, has part, causes, is caused by, etc. If you find value in my work, please [support/donate here](https://gogetfunding.com/knowledge-organization-services-ontology-terminology-metadata-concept-analysis/).
 
 Relationship ontologies include:
 
