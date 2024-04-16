@@ -11,6 +11,8 @@ Relationship ontologies include:
 
 - **Minimal commitments** - The ontology(s) make  minimal or no commitments. It makes minimal or no ontological commitments at other degrees of abstraction; it does not force the user to make commitments. It does not require the user to use or import other ontologies, parts of ontologies, or tools.
 
+_Benefits over other similar system_: using this system does not force you or otherwise commitment you to importing other taxonomies or ontologies, nor a particular philosophical worldview.
+
 ## History/Rationale: 
 (_Specific user-case_) In the course of developing the Orbital Space Ontologies (https://purl.org/space-ontology), relations I need(ed) to assert were often generic and domain-neutral, i.e., they were not specific to the given domain ontology.
 Therefore, for widerapplicability, and given my education in ontology, it was important to modularize those broader relations in an ontology of their own that could then be imported into any ontology.
@@ -24,6 +26,6 @@ No warranty. Presented "AS IS". Author and copyright holder is not liable.
 All content, work and products are subject to revision. No claims to completeness. 
 
 ## Copyright
-© 2018-2021, Robert John Rovetto. All right reserved.
+© 2018-2024, Robert John Rovetto. All right reserved.
 Not authorized for commercial use unless explicitly negotiated with the author. Citation/attribution required.
 
